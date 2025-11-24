@@ -1,7 +1,15 @@
-export const Home = ()=>{
-    return(
+
+import { AboutCards } from "../components/atomic-components/AboutCards/AboutCards.jsx"
+import { Counter } from "../components/atomic-components/Counter/Counter.jsx"
+import { SplideSlider } from "../components/composed-components/SplideSlider"
+
+export const Home = () => {
+    return (
         <div className="home-page">
-        <h1>Home Page</h1>
+
+            <SplideSlider />
+            <Counter/>
+            <AboutCards/>
         </div>
     )
 }
