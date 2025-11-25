@@ -11,6 +11,8 @@
     --gray: #e3f0eb;
     --white: #fff;
     --green: #26d48c;
+    --lightGreen: #47da9d;
+    --borderGreen: #3cd898;
     --blue: #1842b6;
     --black: #000000;
     --primary-font: "Saira", sans-serif;
@@ -105,18 +107,21 @@ h5 {
     font-weight: 600;
 }
 
-h6 {
+h6,
+.cards-h4 {
     font-size: 24px !important;
     font-family: var(--primary-font) !important;
     font-weight: 600 !important;
 }
+
+
 
 p {
     color: var(--lightWhite);
     font-size: 14px;
 }
 
-.about-cards-p{
+.about-cards-p {
     font-size: 16px;
 }
 
@@ -142,9 +147,30 @@ span {
 .display-1-p {
     font-size: 14px;
     color: var(--white);
-        max-width: 200px;
+    max-width: 200px;
     /* max-width: 360px; */
     margin: 0 auto;
+}
+
+
+
+.cards-h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue);
+    font-family: var(--primary-font);
+}
+
+.cards-h2 {
+    font-size: 29px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    line-height: 1.2;
+}
+
+.cards-p {
+    font-size: 16px;
+    color: var(--lightGray);
 }
 
 .btn {
@@ -160,7 +186,7 @@ span {
 }
 
 .primary-button {
-    
+
     background-color: var(--green);
 }
 
@@ -170,7 +196,7 @@ span {
 }
 
 .secondary-button {
-  
+
     background-color: var(--blue);
     color: var(--white);
 }
@@ -178,4 +204,16 @@ span {
 .secondary-button:hover {
     background-color: var(--green);
     color: var(--black);
+}
+
+
+.primary-button-small {
+    padding: 14px 18px !important;
+    background-color: var(--green);
+}
+
+
+.primary-button-small:hover {
+    background-color: var(--blue);
+    color: var(--white);
 }
