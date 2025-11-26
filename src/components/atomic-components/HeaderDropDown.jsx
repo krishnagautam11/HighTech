@@ -3,8 +3,8 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 export default function HeaderDropDown() {
   return (
-    <Menu as="div" className="relative inline-block">
-      <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring-1 inset-ring-white/5 hover:bg-white/20">
+    <Menu as="div" className="relative inline-block  ">
+      <MenuButton className="header-dropdown-btn inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring-1 inset-ring-white/5 hover:bg-white/20">
         Pages
         <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-gray-400" />
       </MenuButton>

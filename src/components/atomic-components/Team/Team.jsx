@@ -2,6 +2,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import team1 from '../../../images/team1.jpg';
 import team2 from '../../../images/team2.jpg';
 import team3 from '../../../images/team3.jpg';
@@ -16,31 +18,55 @@ export const Team = () => {
                     <h2 className="cards-h2 pb-5">Meet our expert Team</h2>
                 </div>
 
-                <div className="team-slider custom-container">
+                <div className="team-slider custom-container sm:pt-8 mt-8 991:pt-0">
 
                     <Splide
                         aria-label="Team Images"
                         options={{
                             type: 'loop',
                             perPage: 3,
+                            gap: '62px',
                             breakpoints: {
+
+                                768: {
+                                    perPage: 1,
+                                    gap:'0px',
+                                    focus: 0,
+
+                                },
+                                991: {
+                                    perPage: 2,
+                                    gap: '50px',
+                                    focus: 0,
+
+                                },
                                 1024: {
                                     perPage: 3,
+                                    gap: '62px',
+                                    
                                 },
-                                768: {
-                                    perPage: 2,
-                                },
-                                480: {
-                                    perPage: 1,
-                                },
+
+
                             },
                             focus: 'center',
-                            gap: '62px',
-                            pagination: true,
+
+                            pagination: false,
                             arrows: true,
                             rewind: true,
                             autoplay: false,
                         }}
+
+                        renderControls={() => (
+                            <div className="splide__arrows custom-arrows">
+                                <button className="splide__arrow splide__arrow--prev">
+                                    <FontAwesomeIcon icon={faArrowLeft} />
+                                </button>
+
+                                <button className="splide__arrow splide__arrow--next">
+                                    <FontAwesomeIcon icon={faArrowRight} />
+                                </button>
+                            </div>
+                        )}
                     >
 
 

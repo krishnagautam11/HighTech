@@ -1,14 +1,31 @@
-
-export const content = [
-  "./src/**/*.{js,jsx,ts,tsx}",
-  "./public/index.html"
-];
-export const theme = {
-  extend: {
-    screens: {
-      '991': '991px'
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
+  ],
+  theme: {
+    extend: {
+      screens: {
+        '320': '320px',
+        '991': '991px',
+      },
     },
   },
+  plugins: [],
+}
 
-};
-export const plugins = [];
+
+// export const content = [
+//   "./src/**/*.{js,jsx,ts,tsx}",
+//   "./public/index.html"
+// ];
+// export const theme = {
+//   extend: {
+//     screens: {
+//       '320':'320px',
+//       '991': '991px',
+//     },
+//   },
+
+// };
+// export const plugins = [];
