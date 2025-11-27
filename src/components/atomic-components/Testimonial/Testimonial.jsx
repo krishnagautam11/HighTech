@@ -8,17 +8,21 @@ import testimonial1 from '../../../images/testimonial1.jpg';
 import testimonial2 from '../../../images/testimonial2.jpg';
 import testimonial3 from '../../../images/testimonial3.jpg';
 import testimonial4 from '../../../images/testimonial4.jpg';
+import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 
 export const Testimonial = () => {
+
+    useFadeOnScroll();
+
     return (
         <div className="testimonial-section">
             <div className="testimonial-content">
-                <div className="testimonial-title text-center">
+                <div className="testimonial-title text-center scroll-animate" data-anim="fade-in" data-delay="0.3s">
                     <h5 className="cards-h5">Our testimonial</h5>
                     <h2 className="cards-h2 pb-5">Our Client Saying!</h2>
                 </div>
 
-                <div className="testimonial-slider custom-container sm:pt-8 mt-8 991:pt-0">
+                <div className="testimonial-slider custom-container sm:pt-8 mt-8 991:pt-0 scroll-animate" data-anim="fade-in" data-delay="0.3s">
 
                     <Splide
                         aria-label="testimonial Images"
@@ -55,7 +59,7 @@ export const Testimonial = () => {
                             rewind: true,
                             autoplay: false
                             //   interval:5000
-                            
+
                         }}
 
                         renderControls={() => (
@@ -69,10 +73,12 @@ export const Testimonial = () => {
                                 </button>
                             </div>
                         )}
+
+                        className="scroll-animate" data-anim="fade-in" data-delay="0.3s"
                     >
 
 
-                        <SplideSlide className="testimonial-splideSlider flex flex-col justify-center items-center">
+                        <SplideSlide className="testimonial-splideSlider flex flex-col justify-center items-center" >
                             <div className="testimonial-slider-content p-6">
                                 <div className="testimonial-slider-slides flex gap-5 items-center">
                                     <div className="testimonial-spildeImg ">

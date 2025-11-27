@@ -5,7 +5,10 @@ import { InputField } from "../Form/InputField";
 import { MessageField } from "../Form/MessageField";
 import { FormButton } from '../Button/FormButton';
 
+import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
+
 export const Form = () => {
+
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -13,6 +16,8 @@ export const Form = () => {
     const [message, setMessage] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
+
+    useFadeOnScroll();
 
     const handleSubmit = (e) => {
         e.preventfault();
@@ -37,16 +42,16 @@ export const Form = () => {
     return (
         <div className="contact-section">
             <div className="contact-content custom-container">
-                <div className="contact-title mb-8 pb-7 text-center">
+                <div className="contact-title mb-8 pb-7 text-center scroll-animate" data-anim="fade-in" data-delay="0.3s">
                     <h5 className="cards-h5 ">Get In Touch</h5>
                     <h2 className="cards-h2 mt-1">Contact for any query</h2>
                     <p className="cards-p ">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. Download Now.</p>
                 </div>
 
                 <div className="contact-form-section custom-container  ">
-                    <div className="contact-form-content">
-                        <div className="contact-form-details mb-8 pb-4 flex 320:flex-col 320:flex-col 991:flex-row justify-between">
-                            <div className="contact-form-link 320:w-full 320:mb-8 lg:w-80 lg:mb-0 p-4 flex gap-5 rounded-lg">
+                    <div className="contact-form-content scroll-animate" data-anim="fade-in" data-delay="0.3s">
+                        <div className="contact-form-details mb-8 pb-4 flex 320:flex-col 320:flex-col 991:flex-row justify-between scroll-animate" data-anim="fade-in" data-delay="0.3s">
+                            <div className="contact-form-link 320:w-full 320:mb-8 lg:w-80 lg:mb-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.3s">
                                 <p><a href="" > <FontAwesomeIcon icon={faLocationDot} className='me-2 social-icons' /></a></p>
 
                                 <a href="">
@@ -59,7 +64,7 @@ export const Form = () => {
 
                             </div>
 
-                            <div className="contact-form-link 320:w-full 320:mb-8 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg">
+                            <div className="contact-form-link 320:w-full 320:mb-8 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.4s">
                                 <p><a href=""> <FontAwesomeIcon icon={faPhone} className='me-2 social-icons' /></a></p>
 
                                 <a href="">
@@ -72,7 +77,7 @@ export const Form = () => {
 
                             </div>
 
-                            <div className="contact-form-link 320:w-full 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg">
+                            <div className="contact-form-link 320:w-full 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.5s">
                                 <p><a href=""> <FontAwesomeIcon icon={faEnvelope} className='me-2 social-icons' /></a></p>
 
                                 <a href="">
@@ -85,7 +90,7 @@ export const Form = () => {
                         </div>
 
                         <div className="contact-form flex 320:flex-col 991:flex-row ">
-                            <div className="contact-map rounded-lg">
+                            <div className="contact-map rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.3s">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6049.1451734293805!2d-73.829185!3d40.70541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1764155123829!5m2!1sen!2sbd"
                                     width="400"
@@ -100,7 +105,7 @@ export const Form = () => {
 
                             </div>
 
-                            <div className="form rounded-lg">
+                            <div className="form rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.4s">
                                 <form action="">
                                     <>
                                         <div className="">

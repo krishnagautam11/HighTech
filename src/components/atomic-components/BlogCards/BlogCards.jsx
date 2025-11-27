@@ -1,11 +1,13 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faShare, faComments, faShareNodes } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faShare,
     faComments,
     faShareAlt, faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 import blog1 from "../../../images/blog1.jpg";
@@ -13,19 +15,23 @@ import blog2 from "../../../images/blog2.jpg";
 import blog3 from "../../../images/blog3.jpg";
 import admin from "../../../images/admin.jpg";
 
+import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
+
 import { Button } from "../Button/Button"
 
 export const BlogCards = () => {
+useFadeOnScroll();
+
     return (
         <div className="blog-section">
 
             <div className="blog-content">
-                <div className="blog-title text-center pb-8">
+                <div className="blog-title text-center pb-8 scroll-animate" data-anim="fade-in" data-delay="0.3s">
                     <h5 className="cards-h5">Our Blog</h5>
                     <h2 className="cards-h2 pb-5">Latest Blog & News</h2>
                 </div>
                 <div className="blog-cards custom-container grid sm:grid-cols-1 991:grid-cols-2  991:justify-items-center   lg:grid-cols-3">
-                    <div className="blog-card ">
+                    <div className="blog-card scroll-animate" data-anim="fade-in" data-delay="0.3s">
 
                         <span className="blog-tag-text-span">Web Design</span>
 
@@ -40,9 +46,18 @@ export const BlogCards = () => {
                                 <p className="cards-p">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                             </div>
 
-                            <div className="blog-card-button mt-2 flex items-center justify-between">
+                            <div className="blog-card-button mt-2 flex items-center ">
                                 <Button className="primary-button-small blog-primary-btn" text="Read More" />
-                                <button className="btn primary-button-small blog-primary-btn ">Share <FontAwesomeIcon icon={faArrowRight} /></button>
+                                <div className="blog-button-group">
+                                    <button className="btn primary-button-small blog-primary-btn ">
+                                        <p className="blog-icons-1">Share  <FontAwesomeIcon icon={faArrowRight} /></p>
+                                        <p className="blog-icons-2">
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faTwitter} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faInstagram} /></a>
+                                        </p>
+                                    </button>
+                                </div>
                             </div>
 
                             <div className="blog-card-subtext mt-5 flex justify-between">
@@ -52,7 +67,7 @@ export const BlogCards = () => {
                         </div>
                     </div>
 
-                    <div className="blog-card ">
+                    <div className="blog-card scroll-animate" data-anim="fade-in" data-delay="0.4s">
 
 
                         <span className="blog-tag-text-span">Development</span>
@@ -70,7 +85,16 @@ export const BlogCards = () => {
 
                             <div className="blog-card-button mt-2 flex items-center justify-between">
                                 <Button className="primary-button-small blog-primary-btn" text="Read More" />
-                                <button className="btn primary-button-small blog-primary-btn ">Share <FontAwesomeIcon icon={faArrowRight} /></button>
+                                <div className="blog-button-group">
+                                    <button className="btn primary-button-small blog-primary-btn ">
+                                        <p className="blog-icons-1">Share  <FontAwesomeIcon icon={faArrowRight} /></p>
+                                        <p className="blog-icons-2">
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faTwitter} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faInstagram} /></a>
+                                        </p>
+                                    </button>
+                                </div>
                             </div>
 
                             <div className="blog-card-subtext mt-5 flex justify-between">
@@ -80,9 +104,7 @@ export const BlogCards = () => {
                         </div>
                     </div>
 
-                    <div className="blog-card 991:col-start-1 991:col-end-3 991:mx-auto 991:w-full 991:max-w-[456px] lg:col-auto lg:mx-0 lg:max-w-full">
-
-
+                    <div className="blog-card 991:col-start-1 991:col-end-3 991:mx-auto 991:w-full 991:max-w-[456px] lg:col-auto lg:mx-0 lg:max-w-full scroll-animate" data-anim="fade-in" data-delay="0.5s">
                         <span className="blog-tag-text-span">Mobile App</span>
 
                         <img src={blog3} alt="" />
@@ -98,7 +120,16 @@ export const BlogCards = () => {
 
                             <div className="blog-card-button mt-2 flex items-center justify-between">
                                 <Button className="primary-button-small blog-primary-btn" text="Read More" />
-                                <button className="btn primary-button-small blog-primary-btn ">Share <FontAwesomeIcon icon={faArrowRight} /></button>
+                                <div className="blog-button-group">
+                                    <button className="btn primary-button-small blog-primary-btn ">
+                                        <p className="blog-icons-1">Share  <FontAwesomeIcon icon={faArrowRight} /></p>
+                                        <p className="blog-icons-2">
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faTwitter} /></a>
+                                            <a href=""><FontAwesomeIcon className='social-icons' icon={faInstagram} /></a>
+                                        </p>
+                                    </button>
+                                </div>
                             </div>
 
                             <div className="blog-card-subtext mt-5 flex justify-between">

@@ -3,22 +3,25 @@ import '@splidejs/react-splide/css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 import team1 from '../../../images/team1.jpg';
 import team2 from '../../../images/team2.jpg';
 import team3 from '../../../images/team3.jpg';
 import team4 from '../../../images/team4.jpg';
 
 export const Team = () => {
+
+    useFadeOnScroll();
+
     return (
         <div className="team-section">
             <div className="team-content">
-                <div className="team-title text-center">
+                <div className="team-title text-center scroll-animate"  data-anim="fade-in" data-delay="0.3s">
                     <h5 className="cards-h5">Our Team</h5>
                     <h2 className="cards-h2 pb-5">Meet our expert Team</h2>
                 </div>
 
-                <div className="team-slider custom-container sm:pt-8 mt-8 991:pt-0">
+                <div className="team-slider custom-container sm:pt-8 mt-8 991:pt-0 scroll-animate"  data-anim="fade-in" data-delay="0.3s">
 
                     <Splide
                         aria-label="Team Images"

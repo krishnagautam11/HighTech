@@ -1,15 +1,18 @@
-// import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {TopBar} from "./components/atomic-components/TopBar/TopBar"
 import { Header } from "./components/composed-components/Header";
-// import {About} from "./pages/About"
-// import { Contact} from "./pages/Contact";
-// import { ErrorPage} from "./pages/ErrorPage";
-import { Home} from "./pages/Home";
-// import { OurBlog} from "./pages/OurBlog";
-// import { OurTeam} from "./pages/OurTeam";
-// import { Projects} from "./pages/Projects";
-// import { Testimonials} from "./pages/Testimonials";
-// import { Services} from "./pages/Services";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Services } from "./pages/Services";
+import { Projects } from "./pages/Projects";
+import { Contact } from "./pages/Contact";
+import { OurBlog } from "./pages/OurBlog";
+import { OurTeam } from "./pages/OurTeam";
+import { Testimonials } from "./pages/Testimonials";
+import { ErrorPage } from "./pages/ErrorPage";
+
+
+
 // import { ScrollToTopButton } from "./components/atomic-components/ScrollToTopBtn";
 import { Footer } from "./components/composed-components/Footer";
 
@@ -21,28 +24,29 @@ function App() {
   return (
     <AppProvider>
       <BrowserRouter>
-        
 
-          <Header />
+        <TopBar />
+        <Header />
 
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              {/* <Route path="/about" element={<About/>} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/join" element={<OurBlog />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/team" element={<OurTeam />} />
-              <Route path="/testimonals" element={<Testimonials />} />
-              <Route path="/errorpage" element={<ErrorPage />} /> */}
-            </Routes>
-          </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<OurBlog />} />
+            <Route path="/team" element={<OurTeam />} />
+            <Route path="/testimonial" element={<Testimonials />} />
+            <Route path="/errorpage" element={<ErrorPage />} />
 
-          <Footer />
-          {/* <ScrollToTopButton /> */}
+          </Routes>
+        </main>
 
-       
+        <Footer />
+        {/* <ScrollToTopButton /> */}
+
+
       </BrowserRouter>
     </AppProvider>
   );

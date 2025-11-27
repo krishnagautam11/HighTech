@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
@@ -22,29 +23,28 @@ export default function HeaderDropDown() {
       {/* MENU */}
       <div
         className={`dropdown-menu absolute left-0 mt-2 w-44 rounded bg-white text-gray-800 shadow-lg border 
-        transition-all duration-150 
-        ${open ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"}`}
+        transition-all duration-150 ${open ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"}`}
       >
         <ul className="py-2">
           <li>
-            <a className="block px-4 py-2 hover:bg-gray-100" href="/blog">
+            <Link className="block px-4 py-2 hover:bg-gray-100" to="/blog">
               Our Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="block px-4 py-2 hover:bg-gray-100" href="/team">
+            <Link className="block px-4 py-2 hover:bg-gray-100" to="/team">
               Our Team
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="block px-4 py-2 hover:bg-gray-100" href="/testimonial">
+            <Link className="block px-4 py-2 hover:bg-gray-100" to="/testimonial">
               Testimonial
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="block px-4 py-2 hover:bg-gray-100" href="/errorpage">
+            <Link className="block px-4 py-2 hover:bg-gray-100" to="/errorpage">
               404 Page
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

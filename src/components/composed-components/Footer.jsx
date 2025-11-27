@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faAngleRight, faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -5,14 +6,15 @@ import { faAngleRight, faLocationDot, faPhone, faEnvelope } from '@fortawesome/f
 export const Footer = () => {
 
     return (
-        <div className='footer '>
+        <div className='footer scroll-animate'  data-anim="fade-in" data-delay="0.3s">
             <div className="footer-content custom-container pt-5 pb-4">
                 <div className="footer-upper-section pt-5 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
                     <div className="footer-details md:w-96 lg:w-80">
                         <div className="footer-text">
-                            <h3>High<span>Tech</span></h3>
+                            {/* <h3>High<span>Tech</span></h3> */}
+                             <Link to="/"> <h3>High<span>Tech</span></h3></Link>
 
-                            <div className="footer-description mt-5 mb-5">
+                            <div className="footer-description mt-5 mb-4">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
                             </div>
                         </div>
@@ -30,11 +32,11 @@ export const Footer = () => {
                     <div className="footer-links md:w-48 lg:w-80">
                         <h2><span>Short Link</span></h2>
                         <div className="footer-link mt-5">
-                            <p className='mb-2'><a href="" > <FontAwesomeIcon icon={faAngleRight} /> About us </a></p>
-                            <p className='mb-2'><a href=""> <FontAwesomeIcon icon={faAngleRight} /> Contact us </a></p>
-                            <p className='mb-2'><a href=""> <FontAwesomeIcon icon={faAngleRight} /> Our Services </a></p>
-                            <p className='mb-2'><a href=""> <FontAwesomeIcon icon={faAngleRight} /> Our Projects </a></p>
-                            <p className='mb-2'><a href=""> <FontAwesomeIcon icon={faAngleRight} /> Latest Blog </a></p>
+                            <p className='mb-2'><Link to="/about" > <FontAwesomeIcon icon={faAngleRight} /> About us </Link></p>
+                            <p className='mb-2'><Link to="/contact"> <FontAwesomeIcon icon={faAngleRight} /> Contact us </Link></p>
+                            <p className='mb-2'><Link to="/services"> <FontAwesomeIcon icon={faAngleRight} /> Our Services </Link></p>
+                            <p className='mb-2'><Link to="/projects"> <FontAwesomeIcon icon={faAngleRight} /> Our Projects </Link></p>
+                            <p className='mb-2'><Link to="/blog"> <FontAwesomeIcon icon={faAngleRight} /> Latest Blog </Link></p>
                         </div>
                     </div>
 

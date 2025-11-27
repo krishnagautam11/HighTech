@@ -17,6 +17,7 @@
     --borderGreen: #3cd898;
     --formBlue: #8ca1db;
     --blue: #1842b6;
+    --darkBlue: #14389b;
     --formDarkBlue: rgba(24, 66, 182, .25);
     --black: #000000;
     --primary-font: "Saira", sans-serif;
@@ -45,6 +46,10 @@ small {
     background: var(--blue);
     color: white;
 
+}
+
+.header--scrolled {
+    margin-top: -40px;
 }
 
 .navlink {
@@ -148,6 +153,12 @@ span {
     margin: 0 auto;
 }
 
+.display-1-h2 {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 28px;
+}
+
 .display-1-p {
     font-size: 14px;
     color: var(--white);
@@ -156,7 +167,12 @@ span {
     margin: 0 auto;
 }
 
-
+.image-hero-card h1 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 72px;
+}
 
 .cards-h5 {
     font-size: 20px;
@@ -239,7 +255,8 @@ input {
     margin-bottom: 20px !important;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     color: var(--lightGray);
     background-color: var(--white);
     border-color: var(--formBlue);
