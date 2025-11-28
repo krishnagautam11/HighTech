@@ -16,12 +16,12 @@ export const Team = () => {
     return (
         <div className="team-section">
             <div className="team-content">
-                <div className="team-title text-center scroll-animate"  data-anim="fade-in" data-delay="0.3s">
+                <div className="team-title text-center scroll-animate" data-anim="fade-in" data-delay="0.3s">
                     <h5 className="cards-h5">Our Team</h5>
                     <h2 className="cards-h2 pb-5">Meet our expert Team</h2>
                 </div>
 
-                <div className="team-slider custom-container sm:pt-8 mt-8 991:pt-0 scroll-animate"  data-anim="fade-in" data-delay="0.3s">
+                <div className="team-slider custom-container sm:pt-8 mt-8 991:pt-0 scroll-animate" data-anim="fade-in" data-delay="0.3s">
 
                     <Splide
                         aria-label="Team Images"
@@ -33,7 +33,7 @@ export const Team = () => {
 
                                 768: {
                                     perPage: 1,
-                                    gap:'0px',
+                                    gap: '0px',
                                     focus: 0,
 
                                 },
@@ -46,7 +46,7 @@ export const Team = () => {
                                 1024: {
                                     perPage: 3,
                                     gap: '62px',
-                                    
+
                                 },
 
 
@@ -61,14 +61,23 @@ export const Team = () => {
 
                         renderControls={() => (
                             <div className="splide__arrows custom-arrows">
-                                <button className="splide__arrow splide__arrow--prev">
+                                <button className="splide__arrow splide__arrow--prev" data-splide-move="prev">
                                     <FontAwesomeIcon icon={faArrowLeft} />
                                 </button>
 
-                                <button className="splide__arrow splide__arrow--next">
+                                <button className="splide__arrow splide__arrow--next" data-splide-move="next">
                                     <FontAwesomeIcon icon={faArrowRight} />
                                 </button>
                             </div>
+                            // <div className="splide__arrows custom-arrows">
+                            //     <button className="splide__arrow splide__arrow--prev">
+                            //         <FontAwesomeIcon icon={faArrowLeft} />
+                            //     </button>
+
+                            //     <button className="splide__arrow splide__arrow--next">
+                            //         <FontAwesomeIcon icon={faArrowRight} />
+                            //     </button>
+                            // </div>
                         )}
                     >
 
