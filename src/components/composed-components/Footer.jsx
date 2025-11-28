@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <div className='footer scroll-animate'  data-anim="fade-in" data-delay="0.3s">
             <div className="footer-content custom-container pt-5 pb-4">
-                <div className="footer-upper-section pt-5 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
+                <div className="footer-upper-section mt-2 pt-5 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
                     <div className="footer-details md:w-96 lg:w-80">
                         <div className="footer-text">
                             {/* <h3>High<span>Tech</span></h3> */}

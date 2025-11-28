@@ -41,7 +41,7 @@ useFadeOnScroll();
                                 <img src={admin} alt="" className="rounded-full outline outline-white" />
                             </div>
                             <div className="blog-card-text ">
-                                <h4 className="cards-h5 mb-1">By Daniel Martin</h4>
+                                <h4 className="cards-h5 mb-1">By hghghjj Daniel Martin</h4>
                                 <span>24 March 2023</span>
                                 <p className="cards-p">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                             </div>

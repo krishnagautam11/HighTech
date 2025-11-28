@@ -10,19 +10,16 @@ import { OurBlog } from "./pages/OurBlog";
 import { OurTeam } from "./pages/OurTeam";
 import { Testimonials } from "./pages/Testimonials";
 import { ErrorPage } from "./pages/ErrorPage";
-
-
-
-// import { ScrollToTopButton } from "./components/atomic-components/ScrollToTopBtn";
+import { ScrollToTopButton } from "./components/atomic-components/ScrollToTopBtn";
 import { Footer } from "./components/composed-components/Footer";
 
 import "./styles/base.css";
 import "./styles/style.css";
-import { AppProvider } from "./context/AppContext";
+
 
 function App() {
   return (
-    <AppProvider>
+
       <BrowserRouter>
 
         <TopBar />
@@ -44,11 +41,10 @@ function App() {
         </main>
 
         <Footer />
-        {/* <ScrollToTopButton /> */}
+        <ScrollToTopButton />
 
 
       </BrowserRouter>
-    </AppProvider>
   );
 }
 

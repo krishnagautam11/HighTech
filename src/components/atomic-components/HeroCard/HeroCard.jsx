@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
+import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 // import PageBg from "../../../images/carousel1.jpg";
 
 export const HeroCard = () => {
+    useFadeOnScroll();
+
     return (
         <div className="image-hero-card ">
 
             {/* <img src={PageBg} alt="Image 1" className="page-Bg" /> */}
 
             <div className="image-hero-card-text flex flex-col items-center">
-                <h1>About Us</h1>
+                <h1 className='scroll-animate' data-anim="slide-down" data-delay="0.3s">About Us</h1>
 
                 <div className="image-hero-card-links flex gap-2 mt-7">
                     <p className='cards-p'><Link to="/">Home <span className='ml-1'>/</span></Link></p>

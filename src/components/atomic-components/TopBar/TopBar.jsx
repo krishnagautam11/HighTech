@@ -1,25 +1,30 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+
 export const TopBar = () => {
   return (
-    <div className="w-full bg-black text-white h-10">
+    <div className="topbar-wrapper w-full  ">
       <div className="custom-container flex items-center justify-between h-full">
 
-        {/* LEFT SECTION */}
-        <div className="topbar-left-section flex items-center gap-6 pl-6">
-          <span className="flex items-center gap-1">📍 23 Ranking Street, New York</span>
-          <span className="flex items-center gap-1">✉️ Email@example.com</span>
+
+        <div className="topbar-left-section flex items-center gap-6 ">
+          <p className="small flex items-center "><FontAwesomeIcon icon={faLocationDot} className='topbar-icons me-2' />23 Ranking Street, New York</p>
+          <p className="small flex items-center "><FontAwesomeIcon icon={faEnvelope} className='topbar-icons me-2' />Email@example.com</p>
         </div>
 
-        {/* CENTER TICKER */}
-        <div className="ticker-lane flex-1 mx-8 relative overflow-hidden">
+       
+        <div className="ticker-lane flex-1 mx-2 relative overflow-hidden">
           <p className="ticker-text">Note : We help you to Grow your Business</p>
         </div>
 
-        {/* RIGHT SECTION */}
-        <div className="topbar-right-section flex items-center gap-4 pr-6">
-          <a>🔵</a>
-          <a>🐦</a>
-          <a>📷</a>
-          <a>💼</a>
+       
+        <div className="topbar-right-section flex items-center mt-2 pr-1">
+          <a href=""><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></a>
+          <a href=""><FontAwesomeIcon className='social-icons' icon={faTwitter} /></a>
+          <a href=""><FontAwesomeIcon className='social-icons' icon={faInstagram} /></a>
+          <a href=""><FontAwesomeIcon className='social-icons' icon={faLinkedinIn} /></a>
         </div>
 
       </div>

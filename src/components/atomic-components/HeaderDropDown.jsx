@@ -11,7 +11,7 @@ export default function HeaderDropDown() {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      {/* DROPDOWN TRIGGER — behaves like Bootstrap nav-link dropdown-toggle */}
+     
       <button
         className="nav-link flex items-center gap-1 text-white hover:text-primary transition"
         onClick={() => setOpen(!open)}
@@ -20,7 +20,7 @@ export default function HeaderDropDown() {
         <ChevronDownIcon className="h-4 w-4 mt-0.5" />
       </button>
 
-      {/* MENU */}
+     
       <div
         className={`dropdown-menu absolute left-0 mt-2 w-44 rounded bg-white text-gray-800 shadow-lg border 
         transition-all duration-150 ${open ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"}`}

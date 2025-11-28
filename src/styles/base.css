@@ -18,6 +18,7 @@
     --formBlue: #8ca1db;
     --blue: #1842b6;
     --darkBlue: #14389b;
+    --red: #FF0000;
     --formDarkBlue: rgba(24, 66, 182, .25);
     --black: #000000;
     --primary-font: "Saira", sans-serif;
@@ -37,7 +38,7 @@ body {
 
 }
 
-small {
+.small {
     font-size: 14px;
     letter-spacing: 1px;
 }

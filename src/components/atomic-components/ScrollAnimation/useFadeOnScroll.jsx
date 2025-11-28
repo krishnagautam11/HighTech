@@ -32,7 +32,7 @@ export default function useScrollAnimation() {
 
         if (rect.top < trigger && !el.classList.contains('animated')) {
           const delay = el.dataset.delay || "0s";
-          const anim = el.dataset.anim || "fade-in"; 
+          const anim = el.dataset.anim || "slide-up"; 
 
           el.style.transitionDelay = delay;
           el.classList.add(anim);

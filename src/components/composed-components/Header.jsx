@@ -46,10 +46,10 @@ export const Header = () => {
                 {/* Contact Section */}
                 <div className="contact-wrapper flex items-center">
                     <div className="contact-logo me-4">
-                        <FontAwesomeIcon icon={faPhone} />
+                        <FontAwesomeIcon icon={faPhone} className="phoneIcon"/>
                     </div>
 
-                    <div className="contact-details me-4 pr-6">
+                    <div className="contact-details me-4 ">
                         <p>Have any questions?</p>
                         <span>Call: + 0123 456 7890</span>
                     </div>
@@ -77,15 +77,15 @@ export const Header = () => {
             </nav>
 
             {/* Mobile Menu */}
-            <div className={`mobile-menu lg:hidden flex flex-col space-y-4 ${isMenuOpen ? "open" : ""}`}>
-                <NavLink to="/" onClick={toggleMenu} activeClassName="active">Home</NavLink>
-                <NavLink to="/about" onClick={toggleMenu} activeClassName="active">About</NavLink>
-                <NavLink to="/services" onClick={toggleMenu} activeClassName="active">Services</NavLink>
-                <NavLink to="/projects" onClick={toggleMenu} activeClassName="active">Projects</NavLink>
-                <NavLink to="/team" onClick={toggleMenu} activeClassName="active">Our Team</NavLink>
-                <NavLink to="/blog" onClick={toggleMenu} activeClassName="active">Our Blog</NavLink>
-                <NavLink to="/testimonial" onClick={toggleMenu} activeClassName="active">Testimonial</NavLink>
-                <NavLink to="/errorpage" onClick={toggleMenu} activeClassName="active">404</NavLink>
+            <div className={`mobile-menu  lg:hidden flex flex-col space-y-4 ${isMenuOpen ? "open" : ""}`}>
+                <NavLink to="/" onClick={toggleMenu} activeClassName="active" className="custom-container">Home</NavLink>
+                <NavLink to="/about" onClick={toggleMenu} activeClassName="active" className="custom-container">About</NavLink>
+                <NavLink to="/services" onClick={toggleMenu} activeClassName="active" className="custom-container">Services</NavLink>
+                <NavLink to="/projects" onClick={toggleMenu} activeClassName="active" className="custom-container">Projects</NavLink>
+                <NavLink to="/team" onClick={toggleMenu} activeClassName="active" className="custom-container">Our Team</NavLink>
+                <NavLink to="/blog" onClick={toggleMenu} activeClassName="active" className="custom-container">Our Blog</NavLink>
+                <NavLink to="/testimonial" onClick={toggleMenu} activeClassName="active" className="custom-container">Testimonial</NavLink>
+                <NavLink to="/errorpage" onClick={toggleMenu} activeClassName="active" className="custom-container">404</NavLink>
             </div>
         </header>
     );
