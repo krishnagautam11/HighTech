@@ -1,12 +1,12 @@
-import { Counter } from "../components/atomic-components/Counter/Counter"
-import { HeroCard } from "../components/atomic-components/HeroCard/HeroCard"
-import { Team } from "../components/atomic-components/Team/Team"
+import { Counter } from "../components/Counter/Counter"
+import { HeroCard } from "../components/HeroCard/HeroCard"
+import { Team } from "../components/Team/Team"
 
 
 export const OurTeam = () => {
     return (
         <div className="team-page-wrapper">
-            <HeroCard />
+            <HeroCard text="Our Team" PageLink="/team" PageName="Team" />
             <Counter />
             <Team/>
 

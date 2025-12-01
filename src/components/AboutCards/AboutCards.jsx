@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button"
-import about1 from '../../../images/about1.jpg'
-import about2 from '../../../images/about2.jpg'
+import about1 from '../../images/about1.jpg'
+import about2 from '../../images/about2.jpg'
 
 import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 

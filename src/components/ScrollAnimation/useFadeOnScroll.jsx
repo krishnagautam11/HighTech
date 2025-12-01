@@ -37,6 +37,7 @@ export default function useScrollAnimation() {
           el.style.transitionDelay = delay;
           el.classList.add(anim);
           el.classList.add('in-view');
+            el.classList.add('scroll-animate');
           el.classList.add('animated'); 
           
 

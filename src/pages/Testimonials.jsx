@@ -1,12 +1,12 @@
-import { Counter } from "../components/atomic-components/Counter/Counter"
-import { HeroCard } from "../components/atomic-components/HeroCard/HeroCard"
-import { Testimonial } from "../components/atomic-components/Testimonial/Testimonial"
+import { Counter } from "../components/Counter/Counter"
+import { HeroCard } from "../components/HeroCard/HeroCard"
+import { Testimonial } from "../components/Testimonial/Testimonial"
 
 
 export const Testimonials = () => {
     return (
         <div className="testimonial-page-wrapper">
-            <HeroCard />
+            <HeroCard text="Testimonial" PageLink="/testimonial" PageName="Testimonial"/>
             <Counter />
             <Testimonial/>
 

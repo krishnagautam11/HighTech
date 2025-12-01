@@ -1,13 +1,13 @@
-import { AboutCards } from "../components/atomic-components/AboutCards/AboutCards"
-import { Counter } from "../components/atomic-components/Counter/Counter"
-import { HeroCard } from "../components/atomic-components/HeroCard/HeroCard"
-import { Team } from "../components/atomic-components/Team/Team"
+import { AboutCards } from "../components/AboutCards/AboutCards"
+import { Counter } from "../components/Counter/Counter"
+import { HeroCard } from "../components/HeroCard/HeroCard"
+import { Team } from "../components/Team/Team"
 
 
 export const About = () => {
     return (
         <div className="about-page-wrapper">
-            <HeroCard />
+            <HeroCard text="About Us" PageLink="/about" PageName="About"/>
             <Counter/>
             <AboutCards/>
             <Team/>

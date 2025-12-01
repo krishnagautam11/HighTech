@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+// import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function HeaderDropDown() {
   const [open, setOpen] = useState(false);
@@ -11,21 +13,21 @@ export default function HeaderDropDown() {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-     
+
       <button
         className="nav-link flex items-center gap-1 text-white hover:text-primary transition"
         onClick={() => setOpen(!open)}
       >
         Pages
-        <ChevronDownIcon className="h-4 w-4 mt-0.5" />
+        <FontAwesomeIcon icon={faAngleDown} />
+        {/* <ChevronDownIcon className="h-4 w-4 mt-0.5" /> */}
       </button>
 
-     
+
       <div
-        className={`dropdown-menu absolute left-0 mt-2 w-44 rounded bg-white text-gray-800 shadow-lg border 
-        transition-all duration-150 ${open ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"}`}
-      >
-        <ul className="py-2">
+        className={`dropdown-menu absolute left-0 mt-2 w-44 rounded-lg bg-white text-gray-800 shadow-lg border 
+        transition-all duration-150 ${open ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible"}`}>
+        <ul className="py-0 ">
           <li>
             <Link className="block px-4 py-2 hover:bg-gray-100" to="/blog">
               Our Blog

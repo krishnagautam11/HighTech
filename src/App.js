@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import {TopBar} from "./components/atomic-components/TopBar/TopBar"
-import { Header } from "./components/composed-components/Header";
+import {TopBar} from "./components/TopBar/TopBar"
+import { Header } from "./components/Header/Header";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
@@ -10,8 +10,8 @@ import { OurBlog } from "./pages/OurBlog";
 import { OurTeam } from "./pages/OurTeam";
 import { Testimonials } from "./pages/Testimonials";
 import { ErrorPage } from "./pages/ErrorPage";
-import { ScrollToTopButton } from "./components/atomic-components/ScrollToTopBtn";
-import { Footer } from "./components/composed-components/Footer";
+import { ScrollToTopButton } from "./components/ScrollToTop/ScrollToTopBtn";
+import { Footer } from "./components/Footer/Footer";
 
 import "./styles/base.css";
 import "./styles/style.css";

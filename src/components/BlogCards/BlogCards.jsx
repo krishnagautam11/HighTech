@@ -10,10 +10,10 @@ import {
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
-import blog1 from "../../../images/blog1.jpg";
-import blog2 from "../../../images/blog2.jpg";
-import blog3 from "../../../images/blog3.jpg";
-import admin from "../../../images/admin.jpg";
+import blog1 from "../../images/blog1.jpg";
+import blog2 from "../../images/blog2.jpg";
+import blog3 from "../../images/blog3.jpg";
+import admin from "../../images/admin.jpg";
 
 import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 

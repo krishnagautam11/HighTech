@@ -1,11 +1,11 @@
-import { Counter } from "../components/atomic-components/Counter/Counter"
-import { HeroCard } from "../components/atomic-components/HeroCard/HeroCard"
-import { ProjectCards } from "../components/atomic-components/ProjectCards/ProjectCards"
+import { Counter } from "../components/Counter/Counter"
+import { HeroCard } from "../components/HeroCard/HeroCard"
+import { ProjectCards } from "../components/ProjectCards/ProjectCards"
 
 export const Projects = () => {
     return (
         <div className="projects-page-wrapper">
-            <HeroCard />
+            <HeroCard text="Projects" PageLink="/projects" PageName="Projects"/>
             <Counter />
             <ProjectCards />
         </div>

@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faArrowRight, faStar } from "@fortawesome/free-solid-svg-icons";
 
-import testimonial1 from '../../../images/testimonial1.jpg';
-import testimonial2 from '../../../images/testimonial2.jpg';
-import testimonial3 from '../../../images/testimonial3.jpg';
-import testimonial4 from '../../../images/testimonial4.jpg';
+import testimonial1 from '../../images/testimonial1.jpg';
+import testimonial2 from '../../images/testimonial2.jpg';
+import testimonial3 from '../../images/testimonial3.jpg';
+import testimonial4 from '../../images/testimonial4.jpg';
 import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
 
 export const Testimonial = () => {

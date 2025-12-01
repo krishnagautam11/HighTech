@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useFadeOnScroll from "../ScrollAnimation/useFadeOnScroll"
-import team1 from '../../../images/team1.jpg';
-import team2 from '../../../images/team2.jpg';
-import team3 from '../../../images/team3.jpg';
-import team4 from '../../../images/team4.jpg';
+import team1 from '../../images/team1.jpg';
+import team2 from '../../images/team2.jpg';
+import team3 from '../../images/team3.jpg';
+import team4 from '../../images/team4.jpg';
 
 export const Team = () => {
 
@@ -33,7 +33,7 @@ export const Team = () => {
 
                                 768: {
                                     perPage: 1,
-                                    gap: '0px',
+                                    gap: '20px',
                                     focus: 0,
 
                                 },
