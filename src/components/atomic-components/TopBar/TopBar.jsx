@@ -9,7 +9,7 @@ export const TopBar = () => {
       <div className="custom-container flex items-center justify-between h-full">
 
 
-        <div className="topbar-left-section flex items-center gap-6 ">
+        <div className="topbar-left-section flex items-center gap-5 ">
           <p className="small flex items-center "><FontAwesomeIcon icon={faLocationDot} className='topbar-icons me-2' />23 Ranking Street, New York</p>
           <p className="small flex items-center "><FontAwesomeIcon icon={faEnvelope} className='topbar-icons me-2' />Email@example.com</p>
         </div>
