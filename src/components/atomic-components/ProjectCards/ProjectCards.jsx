@@ -24,7 +24,7 @@ export const ProjectCards = () => {
                         <img src={project1} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                <h4 className="cards-h4 mb-5">Web Design</h4>
+                                <h4 className="cards-h4 ">Web Design</h4>
                                 <p className="cards-p">Web Analysis</p>
                             </a>
                         </div>
@@ -34,7 +34,7 @@ export const ProjectCards = () => {
                         <img src={project2} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                <h4 className="cards-h4 mb-5">Cyber Secruity</h4>
+                                <h4 className="cards-h4 ">Cyber Secruity</h4>
                                 <p  className="cards-p">Cyber Security Core</p>
                             </a>
                         </div>
@@ -44,7 +44,7 @@ export const ProjectCards = () => {
                         <img src={project3} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                 <h4 className="cards-h4 mb-5">Mobile Info</h4>
+                                 <h4 className="cards-h4 ">Mobile Info</h4>
                                 <p  className="cards-p">Upcoming Phone</p>
                             </a>
                         </div>
@@ -54,7 +54,7 @@ export const ProjectCards = () => {
                         <img src={project4} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                 <h4 className="cards-h4 mb-5">Web Development</h4>
+                                 <h4 className="cards-h4 ">Web Development</h4>
                                 <p  className="cards-p">Web Analysis</p>
                             </a>
                         </div>
@@ -64,7 +64,7 @@ export const ProjectCards = () => {
                         <img src={project5} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                <h4 className="cards-h4 mb-5">Digital Marketing</h4>
+                                <h4 className="cards-h4 ">Digital Marketing</h4>
                                 <p  className="cards-p">Marketing Analysis</p>
                             </a>
                         </div>
@@ -74,7 +74,7 @@ export const ProjectCards = () => {
                         <img src={project6} alt="" />
                         <div className="project-card-text">
                             <a href="">
-                                <h4 className="cards-h4 mb-5">Keyboard Research</h4>
+                                <h4 className="cards-h4 ">Keyboard Research</h4>
                                 <p  className="cards-p">Keyboard Analysis</p>
                             </a>
                         </div>
