@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# HighTech IT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The provided template is designed for an IT Solutions website with a clean, professional layout. Its purpose is to introduce the company, highlight its expertise, and showcase services such as web security, UI/UX design, digital marketing, and project development.
 
-## Available Scripts
+## 🚀 Tech Stack
+<p> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="50" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="50" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="50" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="50" /> </p>
 
-In the project directory, you can run:
+## 📸 Project Preview
 
-### `npm start`
+ ## Table Of Content
+ 1. Project Title
+ 2. Project Description
+ 3. Project Preview
+ 4. Tech Stack
+ 5. Installation
+ 6. Design-to-code Notes
+ 7. Missing Design Decisions
+ 8. Available Scripts
+ 9. Future Improvements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+ ## Setup Instructions
+1️⃣ Clone the repository -
+git clone <your-repo-url>
+cd simplifi-ventures
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2️⃣ Install dependencies -
+npm install
 
-### `npm run build`
+3️⃣ Start development server -
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4️⃣ Build for production -
+npm run build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5️⃣ Run tests -
+npm test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Design-to-Code Notes
 
-### `npm run eject`
+During development, these steps were followed to transform the Figma design into functional UI:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Carefully analyzed Figma to identify missing or unclear components.
+2. Conceptualized the missing elements using logical UX patterns.
+3. Researched UI best practices to refine component structure and aesthetics.
+4. Drafted rough sketches/wireframes to visualize the missing sections.
+5. Implemented components in React using reusable, modular architecture with Tailwind CSS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧩 Missing Design Decisions (Components I Added & Why)
+1. FAQ Section
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Issue:
+The original template did not include a FAQ section.
+Most likely the developer skipped it or didn’t consider it important.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+What I used: Tailwind CSS
 
-## Learn More
+My Solution:
+I created a fully responsive FAQ section and placed it above the Contact Us section, with proper spacing and animations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Blog Share Button Animation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Issue:
+The share button animation existed, but:
 
-### Code Splitting
+-The alignment was off
+-The animation speed was too fast
+-No breakpoint-specific logic
+-Likely because the template was made for practice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+What I used:
 
-### Analyzing the Bundle Size
+Vanilla CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+My Solution:
+-I adjusted the animation timing and alignment.
+-On mobile & tablet, only social icons appear
+-On ≥1200px screens, both the icon and hover animation appear (same as template behavior but improved)
 
-### Making a Progressive Web App
+3. Contact Form Section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Issues Found:
 
-### Advanced Configuration
+-Layout breaks below 425px
+-No form validation
+-Informational contact details misaligned
+-Again, looks like a rushed practice implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+What I used: Tailwind CSS, Vanilla CSS and JavaScript
 
-### Deployment
+My Solution:
+I rebuilt the form layout to be fully responsive and correctly aligned.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Added:
+-Form validation
+-Thank-you modal popup
+-Styling & spacing fixes across all breakpoints.
 
-### `npm run build` fails to minify
+4. Topbar Marquee Section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Issue:
+The marquee animation was too fast and used a cubic-bezier curve that made the motion feel unnatural.
+The direction also felt wrong (left → right).
+
+What I used: Tailwind CSS and Vanilla CSS
+
+My Solution:
+
+-Slowed down the animation
+-Changed direction to right → left
+-Made its motion smooth and subtle
+-Kept it in the same position as the original design
+
+5. Projects Section
+
+Issue:
+Hover-based project cards are useless on screens below 768px (no cursor = no hover effect).
+Original developer didn't optimize this for mobile.
+
+What I used: Tailwind CSS and Vanilla  CSS
+
+My Solution:
+
+-On mobile/tablet, I show project tag names directly (no hover needed)
+-On large screens, tag names hide again and appear only on hover (as in the template).
+
+6. 404 Error Page
+
+Issues:
+
+-Placed incorrectly inside the navbar menu
+-Button had no hover effect
+-Button did not redirect anywhere
+-Looked unfinished
+
+What I used: Css and JavaScript
+
+My Solution:
+
+-Removed 404 page from the navbar
+-Implemented proper 404 routing: any undefined route now shows the 404 page
+-Added working “Go back home” redirect
+-Added hover effects to the button for better UX.
+
+## 📚 Available Scripts
+Command	Description
+npm start	Starts the app in development mode
+npm test	Runs the test suite
+npm run build	Builds an optimized production version
+npm run eject	Exposes configuration files (irreversible)
+
+## 💡 Future Improvements
+If you want, these can be added later:
+Dark mode,
+API integration with backend
+
+
+  
+
