@@ -12,7 +12,7 @@ export const AboutCards = () => {
     return (
         <div className="about-section scroll-animate" data-anim="fade-in" data-delay="0.3s">
             <div className="about-card  custom-container flex flex-col md:flex-row ">
-                <div className="about-img scroll-animate" >
+                <div className="about-img " >
                     <img src={about1} alt="" className="scroll-animate aboutImgOne" data-anim="slide-down" data-delay="0.3s"/>
                     <img src={about2} alt="" className="aboutImg2 scroll-animate " data-anim="slide-up" data-delay="0.3s"/>
                 </div>

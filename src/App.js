@@ -35,7 +35,9 @@ function App() {
             <Route path="/blog" element={<OurBlog />} />
             <Route path="/team" element={<OurTeam />} />
             <Route path="/testimonial" element={<Testimonials />} />
-            <Route path="/errorpage" element={<ErrorPage />} />
+
+            {/* <Route path="/errorpage" element={<ErrorPage />} /> */}
+             <Route path="*" element={<ErrorPage />} />
 
           </Routes>
         </main>

@@ -12,8 +12,33 @@ export const Header = () => {
 
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
+
     useEffect(() => {
-        const handleScroll = () => setIsScrolled(window.scrollY > 0.2);
+        let lastScroll = window.scrollY;
+
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            setIsScrolled(currentScroll > 0.2);
+
+            const homePage = document.querySelector('.home-page');
+            if (!homePage) return;
+
+            // User is at the very top → show padding
+            if (currentScroll === 0) {
+                homePage.classList.remove('remove-gap');
+            }
+            // User is scrolling DOWN → always hide padding
+            else if (currentScroll > lastScroll) {
+                homePage.classList.add('remove-gap');
+            }
+            // User is scrolling UP → still hide padding unless at top
+            else {
+                homePage.classList.add('remove-gap');
+            }
+
+            lastScroll = currentScroll;
+        };
+
         window.addEventListener("scroll", handleScroll);
 
         if (isMenuOpen) {
@@ -21,13 +46,61 @@ export const Header = () => {
         } else {
             document.body.classList.remove('no-scroll');
         }
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
-          
             document.body.classList.remove('no-scroll');
         };
-        
     }, [isMenuOpen]);
+
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         setIsScrolled(window.scrollY > 0.2);
+
+    //         const homePage = document.querySelector('.home-page');
+    //         if (homePage) {
+    //             if (window.scrollY === 0) {
+    //                 homePage.classList.add('remove-gap');
+    //             } else {
+    //                 homePage.classList.remove('remove-gap');
+    //             }
+    //         }
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+
+    //     if (isMenuOpen) {
+    //         document.body.classList.add('no-scroll');
+    //     } else {
+    //         document.body.classList.remove('no-scroll');
+    //     }
+
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //         document.body.classList.remove('no-scroll');
+    //     };
+
+    // }, [isMenuOpen]);
+
+
+    // useEffect(() => {
+    //     const handleScroll = () => setIsScrolled(window.scrollY > 0.2);
+    //     window.addEventListener("scroll", handleScroll);
+
+
+    //     if (isMenuOpen) {
+    //         document.body.classList.add('no-scroll');
+    //     } else {
+    //         document.body.classList.remove('no-scroll');
+    //     }
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+
+    //         document.body.classList.remove('no-scroll');
+    //     };
+
+    // }, [isMenuOpen]);
 
     return (
         <header
@@ -94,7 +167,7 @@ export const Header = () => {
                 <NavLink to="/team" onClick={toggleMenu} activeClassName="active" className="custom-container">Our Team</NavLink>
                 <NavLink to="/blog" onClick={toggleMenu} activeClassName="active" className="custom-container">Our Blog</NavLink>
                 <NavLink to="/testimonial" onClick={toggleMenu} activeClassName="active" className="custom-container">Testimonial</NavLink>
-                <NavLink to="/errorpage" onClick={toggleMenu} activeClassName="active" className="custom-container">404</NavLink>
+                {/* <NavLink to="/errorpage" onClick={toggleMenu} activeClassName="active" className="custom-container">404</NavLink> */}
             </div>
         </header>
     );

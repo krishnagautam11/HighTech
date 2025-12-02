@@ -44,9 +44,9 @@ export default function HeaderDropDown() {
             </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 hover:bg-gray-100" to="/errorpage">
+            {/* <Link className="block px-4 py-2 hover:bg-gray-100" to="/errorpage">
               404 Page
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </div>

@@ -215,7 +215,13 @@
   /* padding-top: 100px; */
   /* padding-top: 70px; */
   padding-top: 65px;
+  
 }
+
+.home-page.remove-gap {
+  padding-top: 0 !important;
+}
+
 
 /* Splide slider */
 
@@ -1381,56 +1387,27 @@ p {
   opacity: 1;
 }
 
-/* Slide UP (from bottom → up) */
-.slide-up {
-  opacity: 1;
-  transform: translateY(40px);
-}
-
-.slide-up.scroll-animate {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-/* Slide DOWN (from top → down) */
-.slide-down {
-  opacity: 1;
-  transform: translateY(-40px);
-}
-
-.slide-down.scroll-animate {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-/* Slide LEFT (from right → left) */
-.slide-left {
-  opacity: 1;
-  transform: translateX(0);
-
-}
-
-.slide-left.scroll-animate {
-  /* opacity: 1; */
-  transform: translateX(-40px);
-}
-
-/* Slide RIGHT (from left → right) */
-.slide-right {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.slide-right.scroll-animate {
-  transform: translateX(40px);
-  /* opacity: 1; */
-}
-
+/* Base hidden state for ALL scroll elements */
 .scroll-animate {
-  opacity: 1;
+  opacity: 0;
+  /* transform: translateY(20px); */
   transition: all 0.8s ease-out;
-  will-change: transform, opacity;
 }
+
+/* Directions */
+/* .fade-in { transform: translateY(0); } */
+
+.slide-up { transform: translateY(40px); }
+.slide-down { transform: translateY(-40px); }
+.slide-left { transform: translateX(40px); }
+.slide-right { transform: translateX(-40px); }
+
+/* Final state when animated */
+.animated {
+  opacity: 1 !important;
+  transform: translate(0,0) !important;
+}
+
 
 /* slides animation */
 
