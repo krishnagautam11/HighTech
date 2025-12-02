@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faAngleRight, faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,13 +7,16 @@ import { faAngleRight, faLocationDot, faPhone, faEnvelope } from '@fortawesome/f
 export const Footer = () => {
 
     return (
-        <div className='footer scroll-animate'  data-anim="fade-in" data-delay="0.3s">
+        <div className='footer scroll-animate' data-anim="fade-in" data-delay="0.3s">
             <div className="footer-content custom-container pt-5 pb-4">
                 <div className="footer-upper-section mt-2 pt-5 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
                     <div className="footer-details md:w-96 lg:w-80">
                         <div className="footer-text">
                             {/* <h3>High<span>Tech</span></h3> */}
-                             <Link to="/"> <h3>High<span>Tech</span></h3></Link>
+                            <Link to="/">
+                                {/* <h3>High<span>Tech</span></h3> */}
+                                <img src={logo} alt="" />
+                            </Link>
 
                             <div className="footer-description mt-5 mb-4">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
@@ -65,7 +69,7 @@ export const Footer = () => {
 
                 </div>
 
-              
+
 
                 <div className="footer-below-section text-center py-6 flex flex-col lg:flex-row justify-between">
                     <p><span>&copy; Your Site Name,</span> All right reserved.</p>

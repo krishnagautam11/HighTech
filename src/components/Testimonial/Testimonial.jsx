@@ -57,7 +57,7 @@ export const Testimonial = () => {
                             pagination: true,
                             arrows: false,
                             rewind: true,
-                            autoplay: false
+                            autoplay: true
                             //   interval:5000
 
                         }}

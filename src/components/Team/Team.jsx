@@ -38,7 +38,7 @@ export const Team = () => {
 
                                 },
                                 991: {
-                                    perPage: 2,
+                                    perPage: 3,
                                     gap: '50px',
                                     focus: 0,
 
@@ -56,7 +56,7 @@ export const Team = () => {
                             pagination: false,
                             arrows: true,
                             rewind: true,
-                            autoplay: false,
+                            autoplay: true,
                         }}
 
                         renderControls={() => (
@@ -90,7 +90,7 @@ export const Team = () => {
                                     </div>
 
                                     <div className="team-splide-text text-center flex flex-col justify-center mt-6">
-                                        <h5 className='cards-h4'>Chris Hemsworth</h5>
+                                        <h5 className='cards-h4'>Chris worth</h5>
                                         <p className='cards-p mt-1'>Backend Developer</p>
                                         <div className="team-socials flex gap-3 mt-5">
                                             <a href="#"><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></a>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import "../../styles/base.css";
 import HeaderDropDown from "./HeaderDropDown";
+import logo from '../../images/logo.png';
 
 export const Header = () => {
 
@@ -23,15 +24,15 @@ export const Header = () => {
             const homePage = document.querySelector('.home-page');
             if (!homePage) return;
 
-            // User is at the very top → show padding
+          
             if (currentScroll === 0) {
                 homePage.classList.remove('remove-gap');
             }
-            // User is scrolling DOWN → always hide padding
+         
             else if (currentScroll > lastScroll) {
                 homePage.classList.add('remove-gap');
             }
-            // User is scrolling UP → still hide padding unless at top
+          
             else {
                 homePage.classList.add('remove-gap');
             }
@@ -112,7 +113,8 @@ export const Header = () => {
                 {/* Desktop Menu */}
                 <div className="desktop-nav flex items-center justify-between">
                     <NavLink to="/" className="desktop-logo">
-                        <h3>High<span>Tech</span></h3>
+                        {/* <h3>High<span>Tech</span></h3> */}
+                        <img src={logo} alt="" />
                     </NavLink>
 
                     <div className="hidden lg:flex items-center nav-links">
@@ -144,7 +146,8 @@ export const Header = () => {
                 {/* Mobile Hamburger */}
                 <div className="lg:hidden mobile-nav">
                     <NavLink to="/" className="text-2xl font-bold">
-                        <h3>High<span>Tech</span></h3>
+                        {/* <h3>High<span>Tech</span></h3> */}
+                        <img src={logo} alt="" />
                     </NavLink>
 
                     <button

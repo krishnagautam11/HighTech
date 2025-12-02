@@ -93,8 +93,8 @@ export const Form = () => {
 
                     <div className="contact-form-section custom-container  ">
                         <div className="contact-form-content scroll-animate" data-anim="fade-in" data-delay="0.3s">
-                            <div className="contact-form-details mb-8 pb-4 flex 320:flex-col 320:flex-col 991:flex-row justify-between scroll-animate" data-anim="fade-in" data-delay="0.3s">
-                                <div className="contact-form-link 320:w-full 320:mb-8 lg:w-80 lg:mb-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.3s">
+                            <div className="contact-form-details mb-8 pb-4 flex 320:flex-col 320:flex-col 991:flex-row  991:flex-wrap 991:justify-center 1200:justify-between 1200:flex-nowrap justify-between scroll-animate" data-anim="fade-in" data-delay="0.3s">
+                                <div className="contact-form-link 320:w-full 320:mb-8  1200:w-80 1200:mb-0 p-4 flex gap-5 rounded-1200 scroll-animate" data-anim="fade-in" data-delay="0.3s">
                                     <p><a href="" > <FontAwesomeIcon icon={faLocationDot} className='me-2 social-icons' /></a></p>
 
                                     <a href="">
@@ -107,7 +107,7 @@ export const Form = () => {
 
                                 </div>
 
-                                <div className="contact-form-link 320:w-full 320:mb-8 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.4s">
+                                <div className="contact-form-link 320:w-full 320:mb-8 320:mt-4  991:mt-0  1200:w-80 1200:mb-0 1200:mt-0 p-4 flex gap-5 rounded-1200 scroll-animate" data-anim="fade-in" data-delay="0.4s">
                                     <p><a href=""> <FontAwesomeIcon icon={faPhone} className='me-2 social-icons' /></a></p>
 
                                     <a href="">
@@ -120,7 +120,7 @@ export const Form = () => {
 
                                 </div>
 
-                                <div className="contact-form-link 320:w-full 320:mt-4  lg:w-80 lg:mb-0 lg:mt-0 p-4 flex gap-5 rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.5s">
+                                <div className="contact-form-link 320:w-full 320:mt-4  991:mt-0  1200:w-80 1200:mb-0 1200:mt-0 p-4 flex gap-5 rounded-1200 scroll-animate" data-anim="fade-in" data-delay="0.5s">
                                     <p><a href=""> <FontAwesomeIcon icon={faEnvelope} className='me-2 social-icons' /></a></p>
 
                                     <a href="">
@@ -133,7 +133,7 @@ export const Form = () => {
                             </div>
 
                             <div className="contact-form flex 320:flex-col 991:flex-row ">
-                                <div className="contact-map rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.3s">
+                                <div className="contact-map rounded-1200 scroll-animate" data-anim="fade-in" data-delay="0.3s">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6049.1451734293805!2d-73.829185!3d40.70541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1764155123829!5m2!1sen!2sbd"
                                         width="400"
@@ -142,13 +142,13 @@ export const Form = () => {
                                         allowfullscreen=""
                                         loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"
-                                        className='rounded-lg'>
+                                        className='rounded-1200'>
                                     </iframe>
 
 
                                 </div>
 
-                                <div className="form rounded-lg scroll-animate" data-anim="fade-in" data-delay="0.4s">
+                                <div className="form rounded-1200 scroll-animate" data-anim="fade-in" data-delay="0.4s">
                                     <form action="">
                                         <>
                                             <div className="">
