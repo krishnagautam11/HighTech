@@ -1,0 +1,36 @@
+high-tech-it/
+│
+├── build/                    
+│
+├── node_modules/              
+│
+├── public/                    
+│
+├── src/                      
+│   │
+│   ├── components/            
+│   │
+│   ├── hooks/                 
+│   │
+│   ├── images/               
+│   │
+│   ├── pages/                
+│   │
+│   ├── styles/                
+│   │
+│   ├── App.css                
+│   ├── App.js                 
+│   ├── App.test.js            
+│   ├── index.css              
+│   ├── index.js             
+│   ├── logo.svg               
+│   ├── reportWebVitals.js     
+│   └── setupTests.js          
+│
+├── .gitignore                 
+├── package-lock.json          
+├── package.json              
+├── postcss.config.js          
+├── tailwind.config.js        
+└── README.md                  
+
