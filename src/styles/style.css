@@ -2797,6 +2797,10 @@ p {
     max-width: 1320px !important;
   }
 
+.desktop-navbar{
+  justify-content:space-between;
+}
+
   .contact-form-link {
     width: 31% !important;
   }
