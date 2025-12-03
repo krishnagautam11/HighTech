@@ -1287,11 +1287,11 @@ p {
   /* font-weight: 600; */
 }
 
-.footer-link p a {
+.footer-link p a, .footer-links .contact-links .contact-link p a {
   transition: all 0.4s ease;
 }
 
-.footer-link p a:hover {
+.footer-link p a:hover, .footer-links .contact-links .contact-link p a:hover {
   letter-spacing: 1px;
 }
 
@@ -1550,6 +1550,14 @@ p {
 
 .topbar-left-section svg {
   margin-right: 6px;
+}
+
+.topbar-right-section a{
+  transition: all 0.4s ease;
+}
+
+.topbar-right-section a:hover {
+  color: var(--green);
 }
 
 .ticker-lane {
@@ -2618,6 +2626,17 @@ p {
     border-right: 1px solid var(--white);
     margin: 0px 16px 0 5px;
     padding-right: 25px;
+  }
+
+  .contact-details> p{
+    color: var(--lightWhite);
+  }
+
+  .contact-wrapper .contact-details span a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
   }
 
 

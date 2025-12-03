@@ -59,9 +59,9 @@ export const Footer = () => {
                         <div className="contact-links">
                             <h2><span>Contact Us</span></h2>
                             <div className="contact-link mt-5">
-                                <p className='pb-3'><a href="" > <FontAwesomeIcon icon={faLocationDot} className='me-2' /> 123 Street, New York, USA</a></p>
-                                <p className='py-3'><a href=""> <FontAwesomeIcon icon={faPhone} className='me-2' /> +123 456 7890</a></p>
-                                <p className='py-3'><a href=""> <FontAwesomeIcon icon={faEnvelope} className='me-2' /> info@exmple.com</a></p>
+                                <p className='pb-3'><a href="https://maps.app.goo.gl/3cqZrJx1nFDUauT26" > <FontAwesomeIcon icon={faLocationDot} className='me-2' /> 123 Street, New York, USA</a></p>
+                                <p className='py-3'><a href="tel:+1234567890"> <FontAwesomeIcon icon={faPhone} className='me-2' /> +123 456 7890</a></p>
+                                <p className='py-3'><a href="mailto:info@example.com"> <FontAwesomeIcon icon={faEnvelope} className='me-2' /> info@exmple.com</a></p>
                             </div>
                         </div>
                     </div>

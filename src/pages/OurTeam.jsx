@@ -1,34 +1,32 @@
-import {useEffect} from 'react';
+import { Helmet } from "react-helmet-async";
 import { Counter } from "../components/Counter/Counter"
 import { HeroCard } from "../components/HeroCard/HeroCard"
 import { Team } from "../components/Team/Team"
 
-
 export const OurTeam = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Our Team – HighTech IT Solutions</title>
 
-     useEffect(() => {
-    document.title = "HighTech IT Solutions - Home";
+        <meta
+          name="description"
+          content="Meet the expert team members behind HighTech IT Solutions — skilled professionals in Web Development, UI/UX, Digital Marketing, Cloud Services, and Security."
+        />
 
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        'content',
-        'We provide Web Development, Digital Marketing, UI/UX, Security and more services.'
-      );
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'We provide Web Development, Digital Marketing, UI/UX, Security and more services.';
-      document.head.appendChild(meta);
-    }
-  }, []);
+        <meta property="og:title" content="Our Team – HighTech IT Solutions" />
+        <meta
+          property="og:description"
+          content="Discover the talented developers, designers, marketers, and IT specialists who power HighTech IT Solutions."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
 
-    return (
-        <div className="team-page-wrapper">
-            <HeroCard text="Our Team" PageLink="/team" PageName="Team" />
-            <Counter />
-            <Team/>
-
-        </div>
-    )
-}
+      <div className="team-page-wrapper">
+        <HeroCard text="Our Team" PageLink="/team" PageName="Team" />
+        <Counter />
+        <Team />
+      </div>
+    </>
+  );
+};

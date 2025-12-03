@@ -135,7 +135,8 @@ export const Header = () => {
 
                     <div className="contact-details me-4 ">
                         <p>Have any questions?</p>
-                        <span>Call: + 0123 456 7890</span>
+                        <span><a href="tel:+1234567890">Call: + 0123 456 7890</a></span>
+                        {/* <span>Call: + 0123 456 7890</span> */}
                     </div>
 
                     <div className="contact-search pl-2">
